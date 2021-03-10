@@ -1,18 +1,63 @@
 {
-    "blogs":[
+  "users": [
     {
-        "title":"My First Blog",
-        "body":"Why do we use it",
-        "author":"Mario",
-        "id":"1"
-
+      "id": 1,
+      "name": "Abdul Azeez",
+      "email": "bethere@gmail.com",
+      "phone": "876-639-8976"
     },
     {
-        "title":"My Second Blog",
-        "body":"Why not we use it",
-        "author":"Luigi",
-        "id":"2"
-
+      "id": 2,
+      "name": "Maher ATAR",
+      "email": "longdayforyou@yahoo.com",
+      "phone": "987-654-8734"
+    },
+    {
+      "id": 3,
+      "name": "Mufasa Sinbad",
+      "email": "alligatorman@icloud.com",
+      "phone": "123-654-0865"
     }
-]
+  ],
+
+  "posts": [
+    {
+      "id": 1,
+      "userId": "1",
+      "title": "Going Home",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis egestas felis, et tincidunt sapien consequat a. Morbi condimentum quam ut faucibus dignissim. Phasellus sagittis tellus dapibus nibh tempor viverra. Nam tempus varius urna sit amet vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin id dui eget nisl elementum sollicitudin in ut quam. Vestibulum sit amet arcu nisi. Mauris a sem eu tellus luctus varius vitae nec risus. Vivamus malesuada egestas lacinia. Nunc congue iaculis arcu in sollicitudin. Cras imperdiet nibh id aliquet pulvinar. Pellentesque neque libero, dignissim laoreet tellus imperdiet, volutpat condimentum lorem. Vivamus commodo ipsum eu est dapibus auctor. Aenean ac pulvinar sapien."
+    },
+    {
+      "id": 2,
+      "userId": "1",
+      "title": "Welcome To my House",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis egestas felis, et tincidunt sapien consequat a. Morbi condimentum quam ut faucibus dignissim. Phasellus sagittis tellus dapibus nibh tempor viverra. Nam tempus varius urna sit amet vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin id dui eget nisl elementum sollicitudin in ut quam. Vestibulum sit amet arcu nisi. Mauris a sem eu tellus luctus varius vitae nec risus. Vivamus malesuada egestas lacinia. Nunc congue iaculis arcu in sollicitudin. Cras imperdiet nibh id aliquet pulvinar. Pellentesque neque libero, dignissim laoreet tellus imperdiet, volutpat condimentum lorem. Vivamus commodo ipsum eu est dapibus auctor. Aenean ac pulvinar sapien."
+    },
+    {
+      "id": 3,
+      "userId": "1",
+      "title": "Almost Gone Fishing",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis egestas felis, et tincidunt sapien consequat a. Morbi condimentum quam ut faucibus dignissim. Phasellus sagittis tellus dapibus nibh tempor viverra. Nam tempus varius urna sit amet vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin id dui eget nisl elementum sollicitudin in ut quam. Vestibulum sit amet arcu nisi. Mauris a sem eu tellus luctus varius vitae nec risus. Vivamus malesuada egestas lacinia. Nunc congue iaculis arcu in sollicitudin. Cras imperdiet nibh id aliquet pulvinar. Pellentesque neque libero, dignissim laoreet tellus imperdiet, volutpat condimentum lorem. Vivamus commodo ipsum eu est dapibus auctor. Aenean ac pulvinar sapien."
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "name": "Asad the Lion ",
+      "email": "dontlookforme@gamil.com",
+      "body": "Phasellus porttitor imperdiet eleifend. Nulla imperdiet venenatis tristique. Nullam id rutrum eros. Nullam a blandit lectus. Sed sed dolor eget ligula imperdiet vestibulum. Quisque lacinia risus mauris, id sodales turpis fermentum vitae. Nam non rutrum odio."
+    },
+    {
+      "id": 2,
+      "name": "Khalid Yusuf",
+      "email": "longdayathome@yahoo.com",
+      "body": "Phasellus porttitor imperdiet eleifend. Nulla imperdiet venenatis tristique. Nullam id rutrum eros. Nullam a blandit lectus. Sed sed dolor eget ligula imperdiet vestibulum. Quisque lacinia risus mauris, id sodales turpis fermentum vitae. Nam non rutrum odio."
+    },
+    {
+      "id": 3,
+      "name": "Abdullah Omar",
+      "email": "didufindme@icloud.com",
+      "body": "Phasellus porttitor imperdiet eleifend. Nulla imperdiet venenatis tristique. Nullam id rutrum eros. Nullam a blandit lectus. Sed sed dolor eget ligula imperdiet vestibulum. Quisque lacinia risus mauris, id sodales turpis fermentum vitae. Nam non rutrum odio."
+    }
+  ]
 }
