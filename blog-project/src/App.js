@@ -10,7 +10,7 @@ import UsersList from './components/UsersList';
 import UsersDetails from './components/UsersDetails';
 import PostDetails from './components/PostDetail';
 import HomePage from './components/HomePage'
-import Adminss from './components/Adminss'
+import Adminss from './components/admin/Adminss'
 
 
 function App() {
