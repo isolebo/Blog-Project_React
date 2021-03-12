@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import UserApi from '../API/UserApi'
+import UserApi from '../api/UserApi'
 
 
 function UsersList() {
@@ -12,8 +12,8 @@ function UsersList() {
             .then(response => {
                 //Set our component's `post_list` array to the results of the API call
                 // which would be 'response.data' object
-                console.log(response)
                 setUserList(response.data) 
+                console.log(response)
             })
             .catch(error => {
                 console.log(error.message)

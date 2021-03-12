@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import React, { useState, useEffect } from 'react';
-import PostApi from '../API/PostApi'
+import PostApi from '../api/PostApi'
 
 const PostDetails = () => {
 

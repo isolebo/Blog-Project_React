@@ -7,7 +7,7 @@ const RequestHeaders ={
 }
 
 const Axios = axios.create({
-    baseURL:'http://jsonplaceholder.typicode.com',
+    baseURL:'http://localhost:8000/',
     headers: RequestHeaders,
 })
 

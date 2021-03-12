@@ -1,0 +1,26 @@
+{
+  "name": "bog-project_react",
+  "version": "1.0.0",
+  "description": "This is a react project that  allows a user to retrieve blog posts from different API endpoints.  A user can access the users and post details for each blog, in addition it  also creates a new user to the blog. The project focuses on  fundamental bases of React APPs using  functional components. Included in this project are: Bootstrap(to style theCSS),Axios(to make API calls),React-router(to route components)",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 5000 --middleware ./range.js",
+    "blog-project": "npm start --prefix blog-project",
+    "dev": "concurrently \"npm run server\"\"npm run blog-project \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isolebo/Blog-Project_React.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isolebo/Blog-Project_React/issues"
+  },
+  "homepage": "https://github.com/isolebo/Blog-Project_React#readme",
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "json-server": "^0.16.3"
+  }
+}
