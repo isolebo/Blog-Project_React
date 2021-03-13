@@ -28,11 +28,9 @@ const UsersDetails = () => {
            {userDetail.map(users => (
             <div key={users.id}>
                 <ul className="list-group">
-                  <li className="list-group-item active">Name: {users.name}</li>
-                  <li className="list-group-item">Username: {users.username}</li>
+                       <li className="list-group-item active">Name: {users.firstName}{users.lastName }</li>
                   <li className="list-group-item">Email: {users.email}</li>
-                  <li className="list-group-item">Phone: {users.phone}</li>
-                  <li className="list-group-item">Street Address: {users.address.street}, {users.address.city}  {users.address.zipcode}</li>
+                  <li className="list-group-item">Password: {users.password}</li>
                 </ul>
             </div>
             ))}

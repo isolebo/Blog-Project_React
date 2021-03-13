@@ -23,7 +23,7 @@ class UserApi {
     }
 
     static deleteUser(user_url) { //deletes a user in the API
-        return Axios.deletes(`/users/users`)
+        return Axios.deletes(`/users/user_url`)
     }
 
 

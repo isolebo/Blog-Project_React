@@ -9,17 +9,17 @@
     },
     {
       "id": 1,
-      "firstName": "Abdul ",
-      "lastName": "Azeez",
-      "email": "hadd@example.com",
-      "password": "jhjhhjhj"
+      "firstName": "Omar ",
+      "lastName": "Qureish",
+      "email": "noname@example.com",
+      "password": "123456"
     },
     {
       "id": 1,
-      "firstName": "Abdul ",
+      "firstName": "Khalid ",
       "lastName": "Azeez",
-      "email": "hadd@example.com",
-      "password": "jhjhhjhj"
+      "email": "yourname@example.com",
+      "password": "123456"
     }
   ],
   "posts": [
