@@ -16,6 +16,10 @@ const Navbar = () => {
         </li>
 
         <li className="nav-item">
+        <Link className="nav-link" to="/comments">Comments</Link>
+        </li>
+
+        <li className="nav-item">
           <Link className="nav-link" to="/forms">Add User</Link>
         </li>
         
