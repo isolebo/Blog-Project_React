@@ -1,17 +1,19 @@
 import React, {useState, useEffect} from 'react'
-import commentApi from '../api/CommentApi'
+import CommentApi from '../api/CommentApi'
 import {Link} from 'react-router-dom'
 
 function CommentList() {
     
     const [comment_list, setCommentList] = useState([])
 
-    const getListofComments = () => {
-        commentApi.getAllComments()
+    const getListComments = () => {
+        CommentApi.getAllComments()
             .then(response => {
                 //Set our component's `comment_list` array to the results of the API call
                 // which would be 'response.data' object
+                
                 setCommentList(response.data) 
+                console.log(response)
             }) 
             .catch(error => {
                 console.log(error.message)
@@ -19,7 +21,7 @@ function CommentList() {
     }
 
     useEffect(() => {
-        getListofComments()
+        getListComments()
 
     }, [])
     return (
@@ -29,7 +31,9 @@ function CommentList() {
      
                     <p key={comment.id}> 
                     <Link to ={`/commentDetails/${comment.id}`}>
+                        {comment.id}
                         {comment.username}
+
                     </Link>
                 </p>
             ))}

@@ -16,7 +16,7 @@ class CommentApi{
     }
 
     static newComment(new_comment_object){
-        return Axios.comment(`comments`,new_comment_object)
+        return Axios.post(`comments`,new_comment_object)
     }
 
     static updateComment(comment_url, updated_comment){
