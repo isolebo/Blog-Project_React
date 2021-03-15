@@ -32,7 +32,8 @@ function CommentList() {
                     <p key={comment.id}> 
                     <Link to ={`/commentDetails/${comment.id}`}>
                         {comment.id}
-                        {comment.username}
+                        {comment.name}
+                        {comment.body}
 
                     </Link>
                 </p>

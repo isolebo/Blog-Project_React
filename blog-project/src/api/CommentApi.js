@@ -8,11 +8,11 @@ class CommentApi{
     }
 
     static getComment(comment_url){
-        return Axios.get(`comments/`,comment_url)
+        return Axios.get(`/comments/`,comment_url)
     }
 
-    static getCommentforComment(comment_url){
-        return Axios.get(`/comments/comment_url/comments`)
+    static getCommentforPost(post_id){
+        return Axios.get(`/comments?postId=post_id`)
     }
 
     static newComment(new_comment_object){
