@@ -1,43 +1,41 @@
 import { useParams } from "react-router";
 import React, { useState, useEffect } from 'react';
-import CommnentApi from '../api/CommnentApi'
+import CommentApi from '../api/CommentApi'
 
-const CommnentDetails = () => {
+const CommentsDetails = () => {
+    const { id } = useParams()//passes id to the API request
+    const [commentDetail,setCommentDetail]= useState([])
 
-    const { id } = useParams()//passes an id to the get the id of the Commnent
-    const [CommnentDetail, setCommnentDetail] = useState([])
-    
-    //function that uses axios to get the details for each Commnent
-    const getTheCommnent = () => {
-        CommnentApi.getCommnent({ params: { id } })
+    //function to request data from API to get details of each Comment
+    const getTheComment = () => {
+        CommentApi.getCommentForPost({ params: { id } })
             .then(response => {
-                setCommnentDetail(response.data)
-            
+                setCommentDetail(response.data)//gets data from API and sets it to the response
+                console.log(response)
             })
             .catch(error => {
                 console.log(error.message)
             })
     }
     useEffect(() => {
-        //function call to retrieve the Commnent
-        getTheCommnent()
+        getTheComment()
 
     },[])
-    
+
     return ( 
-        <div className='Commnent-details'>
-            <h2>Commnent Details</h2>
-           {CommnentDetail.map(Commnents => (
-            <div key={Commnents.id}>{/*outputs the return of each Commnent details */}
+        <div className='Comment-details'>
+         <h2>Comment Details - {id}</h2>
+           {commentDetail.map(comments => (
+            <div key={comments.id}>
                 <ul className="list-group">
-                  <li className="list-group-item active"> Commnent ID: {Commnents.id}</li>
-                  <li className="list-group-item">Title: {Commnents.title}</li>
-                  <p className="list-group-item">Body: {Commnents.body}</p>
+                       <li className="list-group-item active">Name: {comments.id}</li>
+                  <li className="list-group-item">User Name: {comments.name}</li>
+                  <li className="list-group-item">Body: {comments.body}</li>
                 </ul>
-                </div>
+            </div>
             ))}
         </div>
      );
 }
  
-export default CommnentDetails;
+export default CommentsDetails;

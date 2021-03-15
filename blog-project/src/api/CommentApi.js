@@ -11,7 +11,7 @@ class CommentApi{
         return Axios.get(`/comments/`,comment_url)
     }
 
-    static getCommentforPost(post_id){
+    static getCommentForPost(post_id){
         return Axios.get(`/comments?postId=post_id`)
     }
 
