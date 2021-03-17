@@ -25,10 +25,10 @@ function App() {
             <Route  exact path='/' component={HomePage} />
             <Route        path="/users" component={UsersList}/>
             <Route        path="/details/:id" component={UsersDetails}/>
-            <Route        path="/posts" component={PostLists}/>
+            <Route        path="/posts" component={PostLists} />
             <Route        path="/postDetails/:id" component={PostDetails} />
-          <Route path="/comments" component={CommentList} />
-            <Route        path="/commentDetails/:id" component={CommentDetails} />
+            <Route path="/comments" component={CommentList} />
+            <Route path="/commentDetails/:id" component={CommentDetails} />
             <Route        path="/forms" component={Forms} />
             <Route        path="/admin" component={Adminss} />
         </Switch>      
