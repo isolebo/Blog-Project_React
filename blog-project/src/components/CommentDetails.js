@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import React, { useState, useEffect } from 'react';
-import CommentApi from '../api/CommentApi'
+import CommentApi from '../apis/CommentApi'
 import PostLists from '../components/PostLists'
 import CommentList from './CommentList'
 

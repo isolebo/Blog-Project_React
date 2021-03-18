@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import CommentApi from '../api/CommentApi'
+import CommentApi from '../apis/CommentApi'
 import { Link } from 'react-router-dom'
 import CommentDetails from './CommentDetails'
 
