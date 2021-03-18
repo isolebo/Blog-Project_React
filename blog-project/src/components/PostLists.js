@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import PostApi from '../api/PostApi'
+import PostApi from '../apis/PostApi'
 import {Link} from 'react-router-dom'
 
 function PostLists() {

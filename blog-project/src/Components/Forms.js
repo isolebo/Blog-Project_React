@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import{Button,Form,FormGroup,Label,Input}
 from 'reactstrap'
-import UserApi from '../api/UserApi'
+import UserApi from '../apis/UserApi'
 
 
 
