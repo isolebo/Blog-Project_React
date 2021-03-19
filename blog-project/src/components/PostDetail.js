@@ -10,7 +10,7 @@ const PostDetails = () => {
     
     //function that uses axios to get the details for each post
     const getThePost = (id) => {
-        PostApi.getPost()
+        PostApi.getPost(id)
             .then(response => {
                 setPostDetail(response.data)
             
@@ -25,8 +25,7 @@ const PostDetails = () => {
 
     }, [])
     
-    return
-    (
+    return(
         <div className='post-details'>
             <h2>Post Details</h2>
             <ul className="list-group">
@@ -38,7 +37,6 @@ const PostDetails = () => {
             <CommentList postId={id} />
         </div>
                
-    
        
     )
 }
