@@ -30,7 +30,7 @@ function PostLists() {
             {post_list && post_list.map(post => (
      
                     <p key={post.id}> 
-                    <Link to ={`/postDetails/${post.id}`}>
+                    <Link to ={`/posts/:id${post.id}`}>
                         {post.title}
                     </Link>
                 </p>
