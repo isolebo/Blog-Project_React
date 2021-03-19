@@ -26,7 +26,7 @@ function App() {
             <Route        path="/users" component={UsersList}/>
             <Route        path="/details/:id" component={UsersDetails}/>
             <Route  exact      path="/posts" component={PostLists} />
-            <Route        path="/post/:id" component={PostDetails} />
+            <Route        path="/posts/:id" component={PostDetails} />
             <Route        path="/comments" component={CommentList} />
             <Route        path="/commentDetails/:id" component={CommentDetails} />
             <Route        path="/forms" component={Forms} />
