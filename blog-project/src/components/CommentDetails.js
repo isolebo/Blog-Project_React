@@ -10,11 +10,9 @@ const CommentDetails = ({comment}) => {
     
     return ( 
         <div className='Comment-details'>
-<<<<<<< Updated upstream
             
             <h5> {comment.userName} </h5>
-=======
->>>>>>> Stashed changes
+
             <p>
                 {comment.postId}
             </p>
