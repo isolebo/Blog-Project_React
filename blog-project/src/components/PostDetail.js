@@ -28,6 +28,7 @@ const PostDetails = () => {
     return(
         <div className='post-details'>
             <h2>Post Details</h2>
+<<<<<<< Updated upstream:blog-project/src/components/PostDetail.js
             <ul className="list-group">
                 <li className="list-group-item active"> Post ID: {postDetail.id}</li>
                 <li className="list-group-item">User Id: {postDetail.userId}</li>
@@ -39,6 +40,25 @@ const PostDetails = () => {
                
        
     )
+=======
+           {postDetail.map(posts => (
+            <div key={posts.id}>{/*outputs the return of each post details */}
+                <ul className="list-group">
+                  <li className="list-group-item active"> Post ID: {posts.id}</li>
+                  <li className="list-group-item">Title: {posts.title}</li>
+                  <p className="list-group-item">Body: {posts.body}</p>
+                   </ul>
+               </div>
+                
+           ))}
+             <div>
+             <CommentList/>
+             </div>
+        </div>
+
+         
+     );
+>>>>>>> Stashed changes:blog-project/src/Components/PostDetail.js
 }
  
 export default PostDetails;
