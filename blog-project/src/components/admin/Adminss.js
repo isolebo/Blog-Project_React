@@ -1,12 +1,12 @@
 import React from 'react'
 import { Admin, Resource } from 'react-admin'
 import restProvider from 'ra-data-simple-rest'
-import PostList from '../admin/PostList'
-import PostCreate from '../admin/PostCreate'
-import PostEdit from '../admin/PostEdit'
-import UserList from '../admin/UserList'
-import UserCreate from '../admin/UserCreate'
-import UserEdit from '../admin/UserEdit'
+import PostList from './PostList'
+import PostCreate from './PostCreate'
+import PostEdit from './PostEdit'
+import UserList from './UserList'
+import UserCreate from './UserCreate'
+import UserEdit from './UserEdit'
 
 
 

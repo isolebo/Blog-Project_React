@@ -11,9 +11,9 @@ const CommentDetails = ({comment}) => {
     return ( 
         <div className='Comment-details'>
             
-            <h5> {comment.title} </h5>
+            <h5> {comment.userName} </h5>
             <p>
-                {comment.body}
+                {comment.postId}
             </p>
             
          

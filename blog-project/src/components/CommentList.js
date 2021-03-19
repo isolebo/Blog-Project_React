@@ -3,12 +3,12 @@ import CommentApi from '../api/CommentApi'
 import { Link } from 'react-router-dom'
 import CommentDetails from './CommentDetails'
 
-function CommentList() {
+function CommentList({postId}) {
     
     const [comment_list, setCommentList] = useState([])
 
     const getListofComments = () => {
-        CommentApi.getAllComments()
+        CommentApi.getCommentForPost(postId)
             .then(response => {
                 //Set our component's `Commnent_list` array to the results of the API call
                 // which would be 'response.data' object

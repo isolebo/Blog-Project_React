@@ -35,7 +35,7 @@ const PostDetails = () => {
                   <li className="list-group-item">Title: {posts.title}</li>
                   <p className="list-group-item">Body: {posts.body}</p>
                    </ul>
-                   <CommentList/>
+                   <CommentList postId={id}/>
                </div>
                
             ))}

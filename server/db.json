@@ -45,17 +45,20 @@
   "comments": [
     {
       "id": 1,
-      "userName": "Mark Sanchez",
+      "postId": 1,
+      "userId": "1",
       "body": "The best movie was spectacular"
     },
     {
       "id": 2,
-      "userName": "John Doe",
+      "postId": 2,
+      "userId": "2",
       "body": "It was very exciting"
     },
     {
       "id": 3,
-      "userName": "Cathy Lion",
+      "postId": 1,
+      "userId": "3",
       "body": "Wow, very marvelous"
     }
   ]
