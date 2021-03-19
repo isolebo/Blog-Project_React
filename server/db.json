@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "firstName": "Abdul ",
-      "lastName": "Azeez",
+      "firstName": "Sultan ",
+      "lastName": "Khalid",
       "email": "hadd@example.com",
       "password": "jhjhhjhj"
     },
@@ -36,10 +36,10 @@
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis egestas felis, et tincidunt sapien consequat a. Morbi condimentum quam ut faucibus dignissim. Phasellus sagittis tellus dapibus nibh tempor viverra. Nam tempus varius urna sit amet vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin id dui eget nisl elementum sollicitudin in ut quam. Vestibulum sit amet arcu nisi. Mauris a sem eu tellus luctus varius vitae nec risus. Vivamus malesuada egestas lacinia. Nunc congue iaculis arcu in sollicitudin. Cras imperdiet nibh id aliquet pulvinar. Pellentesque neque libero, dignissim laoreet tellus imperdiet, volutpat condimentum lorem. Vivamus commodo ipsum eu est dapibus auctor. Aenean ac pulvinar sapien."
     },
     {
-      "title": "Post Four",
-      "body": "fekjelkjle",
-      "publishedAt": "2021-03-16",
-      "id": 3
+      "id": 1,
+      "userId": "fekjelkjle",
+      "title": "2021-03-16",
+      "body": "jdjhjdskd"
     }
   ],
   "comments": [
