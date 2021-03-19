@@ -7,7 +7,7 @@ function CommentList({postId}) {
     
     const [comment_list, setCommentList] = useState([])
 
-    const getListofComments = () => {
+    const getListofComments = (postId) => {
         CommentApi.getCommentForPost(postId)
             .then(response => {
                 //Set our component's `Commnent_list` array to the results of the API call
@@ -26,12 +26,8 @@ function CommentList({postId}) {
         <div className="container">
             <h4> List of Comments</h4>
             {comment_list && comment_list.map(comment => (
-                <p key={comment.id}>
-                    <Link to={`/CommentDetails/${comment.id}`}>
-                        <CommentDetails key={comment.id} comment={comment} />
-                    </Link>
-                </p>
                 
+                <CommentDetails key={comment.id} comment={comment}/>
             ))}
         </div>
     )
