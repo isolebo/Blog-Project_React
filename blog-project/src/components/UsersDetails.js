@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import React, { useState, useEffect } from 'react';
-import UserApi from '../apis/UserApi'
+import UserApi from '../api/UserApi'
 
 const UsersDetails = () => {
     const { id } = useParams()//passes id to the API request

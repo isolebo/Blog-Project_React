@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import CommentApi from '../apis/CommentApi'
+import CommentApi from '../api/CommentApi'
 import { Link } from 'react-router-dom'
 import CommentDetails from './CommentDetails'
 
@@ -28,15 +28,11 @@ function CommentList() {
             {comment_list && comment_list.map(comment => (
                 <p key={comment.id}>
                     <Link to={`/CommentDetails/${comment.id}`}>
+                        <CommentDetails key={comment.id} comment={comment} />
                     </Link>
-                                                        <CommentDetails key={comment.id} comment={comment}/>
-
                 </p>
                 
             ))}
-
-            
-        
         </div>
     )
 }
