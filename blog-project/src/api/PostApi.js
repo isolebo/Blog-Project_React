@@ -7,8 +7,8 @@ class PostApi{
         return Axios.get(`/posts/`)
     }
 
-    static getPost(post_url){
-        return Axios.get(`posts/`,post_url)
+    static getPost(post_id){
+        return Axios.get(`/posts/${post_id}`)
     }
 
     static getCommentforPost(post_url){
