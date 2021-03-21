@@ -9,10 +9,11 @@ const PostDetails = () => {
     const [postDetail, setPostDetail] = useState({})
     
     //function that uses axios to get the details for each post
-    const getThePost = (id) => {
+    const getThePost = () => {
         PostApi.getPost(id)
             .then(response => {
                 setPostDetail(response.data)
+                console.log(response.data)
             
             })
             .catch(error => {

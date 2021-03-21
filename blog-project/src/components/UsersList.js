@@ -31,6 +31,7 @@ function UsersList() {
                     <Link to={`/details/${user.id}`}>
                         {user.firstName}
                     </Link>
+                    
                 </p>
             ))}
         </div>

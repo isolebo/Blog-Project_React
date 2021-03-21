@@ -2,15 +2,16 @@ import React, {useState, useEffect} from 'react'
 import CommentApi from '../api/CommentApi'
 import { Link } from 'react-router-dom'
 import CommentDetails from './CommentDetails'
+import PostDetail from './PostDetail'
 
 
-function CommentList({ postId }) {
+function CommentList({ id }) {
 
 
-    const [comment_list, setCommentList] = useState([])
+    const [comment_list, setCommentList] = useState({})
 
-    const getListofComments = (postId) => {
-        CommentApi.getCommentForPost(postId)
+    const getListofComments = (post_id) => {
+        CommentApi.getCommentForPost(post_id)
             .then(response => {
                 //Set our component's `Commnent_list` array to the results of the API call
                 // which would be 'response.data' object
@@ -23,20 +24,30 @@ function CommentList({ postId }) {
                 console.log(error.message)
             })
     }
+
+    
     
     useEffect(() => {
         getListofComments()
     }, [])
+
     return (
         <div className="container">
-            <h4> List of Comments</h4>
+            <h4>Comments</h4>
             {comment_list && comment_list.map(comment => (
-
                 
-                <CommentDetails key={comment.id} comment={comment} />
+                
+                
+                <p>
+                <CommentDetails key={comment.id} comment={comment}/> 
+                </p>
             ))}
-
-        </div>)
+    
+            
+            
+        </div>
+    
+    )
             }
 
 
