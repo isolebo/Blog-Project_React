@@ -6,8 +6,8 @@ class UserApi {
         return Axios.get(`/users/`)
     }
 
-    static getUser(user_url) {
-        return Axios.get(`/users/`,user_url)
+    static getUser(userId) {
+        return Axios.get(`/users/${userId}`)
     }
     
     static newUser(new_user_object) {

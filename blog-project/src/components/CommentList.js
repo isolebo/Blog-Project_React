@@ -5,12 +5,12 @@ import CommentDetails from './CommentDetails'
 import PostDetail from './PostDetail'
 
 
-function CommentList({ post_id }) {
+function CommentList({post_id}) {
 
 
     const [comment_list, setCommentList] = useState([])
 
-    const getListofComments = (post_id) => {
+    const getListofComments = () => {
         CommentApi.getCommentsForPost(post_id)
             .then(response => {
                 //Set our component's `Commnent_list` array to the results of the API call
@@ -18,8 +18,6 @@ function CommentList({ post_id }) {
                 setCommentList(response.data)
                 console.log(response)
             })
-                
-
             .catch(error => {
                 console.log(error.message)
             })
