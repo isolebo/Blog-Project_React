@@ -7,7 +7,6 @@ import PostDetail from './PostDetail'
 
 function CommentList({post_id}) {
 
-
     const [comment_list, setCommentList] = useState([])
 
     const getListofComments = () => {
@@ -23,7 +22,6 @@ function CommentList({post_id}) {
             })
     }
 
-    
     useEffect(() => {
         getListofComments()
     }, [])
