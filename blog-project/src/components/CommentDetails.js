@@ -6,7 +6,7 @@ import CommentList from './CommentList'
 import UserApi from '../api/UserApi'
 import UsersList from './UsersList'
 
-const CommentDetails = () => {
+const CommentDetails = ({comment}) => {
     const { id } = useParams()
     const [commentUser,setCommentUser]= useState({})
     
@@ -35,7 +35,7 @@ const CommentDetails = () => {
                 <li className="list-group-item active"> Post ID: {commentUser.id}</li>
                 <li className="list-group-item">User Id: {commentUser.firstName}</li>
                 <li className="list-group-item">Title: {commentUser.lastName}</li>
-                <p className="list-group-item">Body: {commentUser.email}</p>
+                <p className="list-group-item">Body: {comment.body}</p>
             </ul>
             <UsersList />
             

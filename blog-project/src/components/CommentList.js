@@ -5,13 +5,13 @@ import CommentDetails from './CommentDetails'
 import PostDetail from './PostDetail'
 
 
-function CommentList({ id }) {
+function CommentList({ post_id }) {
 
 
-    const [comment_list, setCommentList] = useState({})
+    const [comment_list, setCommentList] = useState([])
 
     const getListofComments = (post_id) => {
-        CommentApi.getCommentForPost(post_id)
+        CommentApi.getCommentsForPost(post_id)
             .then(response => {
                 //Set our component's `Commnent_list` array to the results of the API call
                 // which would be 'response.data' object
@@ -26,7 +26,6 @@ function CommentList({ id }) {
     }
 
     
-    
     useEffect(() => {
         getListofComments()
     }, [])
@@ -35,18 +34,11 @@ function CommentList({ id }) {
         <div className="container">
             <h4>Comments</h4>
             {comment_list && comment_list.map(comment => (
-                
-                
-                
                 <p>
-                <CommentDetails key={comment.id} comment={comment}/> 
+                    <CommentDetails key={comment.id} comment={comment}/> 
                 </p>
             ))}
-    
-            
-            
         </div>
-    
     )
             }
 
