@@ -11,7 +11,7 @@ const CommentDetails = ({comment}) => {
     const [commentUser,setCommentUser]= useState({})
     
     const getUserForComment = () => {
-        UserApi.getUser()
+        UserApi.getUser(comment.userId)
             .then(response => {
                 setCommentUser(response.data)
                 console.log(response.data)
@@ -32,10 +32,10 @@ const CommentDetails = ({comment}) => {
         <div className='Comment-details'>
             
             <ul className="list-group">
-                <li className="list-group-item active"> Post ID: {commentUser.id}</li>
-                <li className="list-group-item">User Id: {commentUser.firstName}</li>
-                <li className="list-group-item">Title: {commentUser.lastName}</li>
-                <p className="list-group-item">Body: {comment.body}</p>
+                <li className="list-group-item active"> Post ID: {comment.postId}</li>
+                <li className="list-group-item"> {comment.firstName}</li>
+                <li className="list-group-item">{commentUser.lastName}</li>
+                <li className="list-group-item">Body: {comment.body}</li>
             </ul>
             <UsersList />
             
